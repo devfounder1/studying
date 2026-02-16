@@ -92,6 +92,19 @@ int main() {
   MatrixXf matrix2const;
   matrix2const.setConstant(rows,cols,value);
   cout << matrix2const << "\n\n";
-  
 
+
+  // identity matrix, two aproches
+
+  int rowNumbers = 10;
+  int colNumbers = 10;
+
+  MatrixXd matrixidentity;
+  matrixidentity = MatrixXd::Identity(rowNumbers, colNumbers);
+  cout << matrixidentity << "\n\n";
+
+  MatrixXd matrixidentity1;
+  matrixidentity1.setIdentity(rowNumbers,colNumbers);
+  cout << matrixidentity1 << "\n\n";
+  
 }
