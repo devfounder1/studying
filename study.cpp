@@ -5,6 +5,7 @@
 using namespace Eigen;
 using namespace std;
 
+const float value = 1.1;
 
 int main() {
   MatrixXd m(2, 2);
@@ -83,9 +84,14 @@ int main() {
 
 
 
-
-
-
-
+  // matrix of constants
+  MatrixXf matrixconst;
+  matrixconst = MatrixXf::Constant(rows,cols, value);
+  cout << matrixconst << "\n\n";
+  // another way
+  MatrixXf matrix2const;
+  matrix2const.setConstant(rows,cols,value);
+  cout << matrix2const << "\n\n";
+  
 
 }
