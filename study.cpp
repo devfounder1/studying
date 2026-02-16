@@ -68,9 +68,24 @@ int main() {
   matrixx1zeros.setZero(rows, cols);
   cout << matrixx1zeros << "\n\n";
   // another option;
-  MatrixXf matrix_of_ones;
-  matrix_of_ones = MatrixXf::Zero(rows,cols);
-  cout << matrix_of_ones << "\n\n";
+  MatrixXf matrix_of_zeros;
+  matrix_of_zeros = MatrixXf::Zero(rows,cols);
+  cout << matrix_of_zeros << "\n\n";
+
+  // matrix of ones
+  MatrixXf matrix1one;
+  matrix1one.setOnes(rows,cols);
+  cout << matrix1one << "\n\n";
+  // another way
+  MatrixXf matrix2ones;
+  matrix2ones = MatrixXf::Ones(rows,cols);
+  cout << matrix2ones << "\n\n";
+
+
+
+
+
+
 
 
 }
