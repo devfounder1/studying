@@ -27,8 +27,16 @@ int main() {
 
 
 
+  // define a dynamic matrix, explicit decloaration
+  Matrix<float, Dynamic, Dynamic> MatrixB;
+  
+  // typedef decloration
+  MatrixXf B1;
 
+  // constructor, allocate memory? but do not initialize
+  MatrixXd MatrixC(10,10);
 
+  
 
 
 
