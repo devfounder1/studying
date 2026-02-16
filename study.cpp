@@ -151,7 +151,14 @@ int main() {
 
   // matrix multiplication
   MatrixXd O = K1 * K2;
-  cout << "multiplication of matrixes K1 and K2 : \n"
+  cout << "multiplication of matrixes K1 and K2 : \n" << O << "\n\n";
 
+
+
+  // multiplication by scalar
+  int s1 = 2;
+  MatrixXd F1;
+  F1 = s1 * K1;
+  cout << "matrix product of the scalar 2 and the matrix F1 : " << F1 << "\n\n"; 
 
 }
