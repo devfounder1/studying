@@ -123,7 +123,17 @@ int main() {
 
 
 
+  // accessing colums and rows of a matrix
+  
+  cout <<"\n\n" << "row 1 of matrixV is \n " << matrixV.row(0);
+  cout << "\n\n" << "column 1 of matrix is \n " << matrixV.col(1); 
 
 
+  // create a diagonal matrix out of a vector 
+  Matrix <double, 3,1> vector1;
+  vector1 << 1,2,3;
+  MatrixXd diagonalmatrix; 
+  diagonalmatrix = vector1.asDiagonal();
+  cout << "diagonal matrix is \n\n" << diagonalmatrix;
 
 }
