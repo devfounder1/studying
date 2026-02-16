@@ -19,7 +19,7 @@ int main() {
   matrixA.setZero();
   cout << matrixA << "\n\n";
   
-  // another way
+  // another way to define matrix 3x3
   Matrix3f matrixA1;
   matrixA1.setZero();
   cout << matrixA1 << "\n\n";
