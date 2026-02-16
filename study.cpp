@@ -37,6 +37,8 @@ int main() {
   MatrixXd MatrixC(10,10);
 
 
+  
+  
   //creating matrix (2,2)
 
   MatrixXd matrixC1 (2,2);
@@ -47,6 +49,28 @@ int main() {
 
   cout << matrixC1 << "\n\n";
 
+  // another way 
+
+  Matrix4f matrixD;
+  matrixD << 1,2,3,4,
+  5,6,7,8,
+  9,10,11,12,
+  13,14,15,16;
+  cout << matrixD << "\n\n";
+
+
+
+  // matrix of zeros
+  int rows = 5;
+  int cols = 5;
+
+  MatrixXf matrixx1zeros;
+  matrixx1zeros.setZero(rows, cols);
+  cout << matrixx1zeros << "\n\n";
+  // another option;
+  MatrixXf matrix_of_ones;
+  matrix_of_ones = MatrixXf::Zero(rows,cols);
+  cout << matrix_of_ones << "\n\n";
 
 
 }
