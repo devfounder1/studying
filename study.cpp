@@ -25,7 +25,7 @@ int main() {
   cout << matrixA1 << "\n\n";
 
 
-
+  ////////////// DYNAMIC MATRIX ////////////////////////
 
   // define a dynamic matrix, explicit decloaration
   Matrix<float, Dynamic, Dynamic> MatrixB;
@@ -36,10 +36,16 @@ int main() {
   // constructor, allocate memory? but do not initialize
   MatrixXd MatrixC(10,10);
 
-  
 
+  //creating matrix (2,2)
 
+  MatrixXd matrixC1 (2,2);
+  matrixC1(0,0) = 1;
+  matrixC1(0,1) = 2;
+  matrixC1(1,0) = 3;
+  matrixC1(1,1) = 4;
 
+  cout << matrixC1 << "\n\n";
 
 
 
