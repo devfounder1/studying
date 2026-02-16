@@ -106,5 +106,24 @@ int main() {
   MatrixXd matrixidentity1;
   matrixidentity1.setIdentity(rowNumbers,colNumbers);
   cout << matrixidentity1 << "\n\n";
-  
+
+
+  MatrixXd matrixV(4,4);
+  matrixV << 101,102,103,104,
+      105,106,107,108,
+      109,110,111,112,
+      113,114,115,116;
+  // access thre matrix composesed of 1:2 rows and 1:2 colums of matrixV
+  MatrixXd matrixVpartition = matrixV.block(0,0,2,2);
+  cout << matrixVpartition << "\n\n";
+
+  // берет отдельный блок в матрице 
+  MatrixXd matrixVpartition2 = matrixV.block(1,1,2,2);
+  cout << matrixVpartition2 << "\n\n";
+
+
+
+
+
+
 }
