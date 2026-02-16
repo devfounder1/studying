@@ -125,8 +125,8 @@ int main() {
 
   // accessing colums and rows of a matrix
   
-  cout <<"\n\n" << "row 1 of matrixV is \n " << matrixV.row(0);
-  cout << "\n\n" << "column 1 of matrix is \n " << matrixV.col(1); 
+  cout <<"\n\n" << "row 1 of matrixV is \n " << matrixV.row(0) << "\n";
+  cout << "\n\n" << "column 1 of matrix is \n " << matrixV.col(1) << "\n\n"; 
 
 
   // create a diagonal matrix out of a vector 
@@ -134,6 +134,24 @@ int main() {
   vector1 << 1,2,3;
   MatrixXd diagonalmatrix; 
   diagonalmatrix = vector1.asDiagonal();
-  cout << "diagonal matrix is \n\n" << diagonalmatrix;
+  cout << "diagonal matrix is \n\n" << diagonalmatrix << "\n\n";
+
+
+  // basic matrix opperations
+
+  MatrixXd K1(2,2);
+  MatrixXd K2(2,2);
+
+  K1 << 1,2,3,4;
+  K2 << 6,3,6,9;
+
+  MatrixXd L = K1 + K2;
+  cout << "summ of matrixes K1 and K2 : \n" << L << "\n\n";
+
+
+  // matrix multiplication
+  MatrixXd O = K1 * K2;
+  cout << "multiplication of matrixes K1 and K2 : \n"
+
 
 }
