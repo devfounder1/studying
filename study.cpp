@@ -161,4 +161,13 @@ int main() {
   F1 = s1 * K1;
   cout << "matrix product of the scalar 2 and the matrix F1 : " << F1 << "\n\n"; 
 
+  // matrix transpose 
+  MatrixXd At;
+  MatrixXd R1;
+
+  At = K1.transpose();
+  cout << "\n\n original matrix K1\n\n" << K1;
+  cout << "\n\n Its transpose \n\n" << At;
+
+
 }
