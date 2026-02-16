@@ -32,7 +32,7 @@ int main() {
   Matrix<float, Dynamic, Dynamic> MatrixB;
   
   // typedef decloration
-  MatrixXf B1;
+  MatrixXd B1;
 
   // constructor, allocate memory? but do not initialize
   MatrixXd MatrixC(10,10);
@@ -168,6 +168,13 @@ int main() {
   At = K1.transpose();
   cout << "\n\n original matrix K1\n\n" << K1;
   cout << "\n\n Its transpose \n\n" << At;
+
+
+  // matrix inverse
+  MatrixXd G;
+  G = K1.inverse();
+  cout << "\n\n the inverse matrix K1 \n\n" << G;
+  cout << "\n\n double check K1^{-1}*A1 = \n\n" << G * K1;
 
 
 }
