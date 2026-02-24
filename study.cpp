@@ -8,6 +8,10 @@ using namespace std;
 const float value = 1.1;
 
 int main() {
+
+    setlocale(LC_ALL,"RU"); 
+    cout << "Eigen version: " << EIGEN_WORLD_VERSION << "." << EIGEN_MAJOR_VERSION << "." << EIGEN_MINOR_VERSION << "\n\n";
+
   MatrixXd m(2, 2);
   m(0, 0) = 3;
   m(1, 0) = 2.5;
